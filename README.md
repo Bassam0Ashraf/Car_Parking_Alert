@@ -27,7 +27,7 @@ activates as the obstacle gets closer, helping drivers park safely.
  2. **Ultrasonic Sensor:** HC-SR04.
  3. **Display:** 16x2 LCD in 4-bit mode.
  4. **LEDs:** Red,Green and Blue.
- 5. **Buzzer:** activated during fire alert.
+ 5. **Buzzer:** activated when the object is too close.
 
 
 # **Operation Description:**
