@@ -29,6 +29,10 @@ activates as the obstacle gets closer, helping drivers park safely.
  4. **LEDs:** Red,Green and Blue.
  5. **Buzzer:** activated when the object is too close.
 
+![Screenshot 2024-10-26 001514](https://github.com/user-attachments/assets/4e8ff323-0c4a-4098-8eb4-e5b5094a2c42)
+
+
+
 
 # **Operation Description:**
 - The ultrasonic sensor emits an ultrasonic wave and listens for its reflection from a nearby object.
