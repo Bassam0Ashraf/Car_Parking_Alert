@@ -4,7 +4,7 @@
  *
  * File Name: ultra_sonic_sensor.c
  *
- * Description: Source file for Buzzer UltraSonic Sensor (HC-SR04) driver.
+ * Description: Source file for UltraSonic Sensor (HC-SR04) driver.
  *
  * Author: Bassam Ashraf
  *
