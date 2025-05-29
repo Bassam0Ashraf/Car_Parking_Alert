@@ -1,47 +1,38 @@
-# **Project Overview:**
-This project uses an ATmega32 microcontroller to process distance data
-from an ultrasonic sensor and display the results on an LCD. The system
-includes three LEDs (Red, Green, and Blue) and a buzzer for indicating the
-proximity of an obstacle. The LEDs light up progressively and the buzzer
-activates as the obstacle gets closer, helping drivers park safely.
+# Car Parking Sensor System  
 
- # **Features:**
-### 1. **Ultrasonic Distance Measurement:**
-- The ultrasonic sensor measures the distance between the car and any nearby object.
+## 📖 Project Overview  
+Develop a car parking alert system using ATmega32 microcontroller and ultrasonic sensor to measure obstacle distance and provide visual and audio warnings to assist drivers.
 
-### 2. **LCD Display:**
-- Displays the distance measured by the ultrasonic sensor in centimeters. Also displays "Stop" if the distance is less than 5 cm.
-  
-### 3.  **LED Indicators:**
-- Three LEDs (Red, Green, and Blue) light up according to the proximity of the object.
+## 🎯 Objectives  
+- Measure distance to obstacles using ultrasonic sensor and display on LCD.  
+- Provide LED and buzzer alerts based on proximity thresholds.  
+- Ensure safe parking with dynamic, real-time feedback.
 
-### 4. **Buzzer Alert:**
-- The buzzer sounds when the object is too close (<= 5 cm).
+## 💡 Features  
+- **Ultrasonic Distance Measurement:** Calculates distance and updates in real-time.  
+- **LCD Display:** Shows distance in centimeters, displays "Stop" if object is ≤5 cm.  
+- **LED Indicators:** Red, Green, and Blue LEDs light up based on proximity.  
+- **Buzzer Alert:** Activates when distance ≤5 cm.  
+- **Dynamic Feedback:** LED and buzzer behavior based on distance ranges.
 
-### 5. **Dynamic LED Behavior:**
-- LEDs turn ON/OFF based on the following distance ranges.
+## 📚 Hardware Components  
+- **Microcontroller:** ATmega32  
+- **Ultrasonic Sensor:** HC-SR04  
+- **Display:** 16x2 LCD (4-bit mode)  
+- **LEDs:** Red, Green, Blue  
+- **Buzzer:** Audible alert for close obstacles  
 
+![Car Parking Sensor](https://github.com/user-attachments/assets/4e8ff323-0c4a-4098-8eb4-e5b5094a2c42)  
 
-# **Hardware Components:**
- 1. **Microcontroller:** ATmega32.
- 2. **Ultrasonic Sensor:** HC-SR04.
- 3. **Display:** 16x2 LCD in 4-bit mode.
- 4. **LEDs:** Red,Green and Blue.
- 5. **Buzzer:** activated when the object is too close.
+## 🚀 Operation Highlights  
+- **Ultrasonic Measurement:** Sends and receives waves to detect distance.  
+- **Distance Calculation:** ATmega32 calculates and updates LCD with real-time distance.  
+- **Alert Levels:**
+  - ≤5 cm: All LEDs flash, buzzer sounds, LCD shows "Stop".  
+  - 6–10 cm: All LEDs ON, no buzzer.  
+  - 11–15 cm: Red & Green ON, Blue OFF.  
+  - 16–20 cm: Red ON, others OFF.  
+  - >20 cm: All LEDs OFF, buzzer OFF.  
+- **Continuous Updates:** System provides real-time feedback for safe parking.
 
-![Screenshot 2024-10-26 001514](https://github.com/user-attachments/assets/4e8ff323-0c4a-4098-8eb4-e5b5094a2c42)
-
-
-
-
-# **Operation Description:**
-- The ultrasonic sensor emits an ultrasonic wave and listens for its reflection from a nearby object.
-- The ATmega32 microcontroller calculates the distance by measuring the time taken for the wave to return to the sensor.
-- The measured distance is displayed on the LCD in centimeters.
-- The system continuously updates and recalculates the distance, providing real-time feedback to the driver.
-- Distance to LED and Buzzer Mapping:
-    - Distance <= 5 cm: All LEDs are flashing (Red, Green, Blue), Buzzer sounds, LCD shows "Stop."
-    - 6 cm <= Distance <= 10 cm: All LEDs ON (Red, Green, Blue), No buzzer.
-    - 11 cm <= Distance <= 15 cm: Red and Green LEDs ON, Blue LED OFF.
-    - 16 cm <= Distance <= 20 cm: Only Red LED ON, others OFF.
-    - Distance > 20 cm: All LEDs OFF, Buzzer OFF.
+---  
