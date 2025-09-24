@@ -316,7 +316,7 @@ This project is developed as part of the Standard Embedded Systems Diploma progr
 **Course**: Standard Embedded Systems Diploma  
 **Program**: EDGES Training Program  
 **Development Environment**: Eclipse IDE, Proteus Design Suite  
-**Language**: C
+**Language**: C          
 **Target Hardware**: ATmega32 Microcontroller  
 
 ---
